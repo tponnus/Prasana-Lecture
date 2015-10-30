@@ -1,0 +1,68 @@
+# comments (anything rightside of # will not be executed)
+<- OR = assignment operator
+
+x<-5
+x=5
+
+print(x) #alternate for print command some times it needs print(x) command
+x
+
+: #meaning to 1 to 5
+  a<-1:5
+
+print(a)
+a
+
+[1] # called index useful to pull particular element
+
+b<-1:100
+b
+b<-37:85
+b
+
+# five basic R objects
+1. character 
+2. numeric
+3. integers
+4. complex
+5. logical
+
+# how to represent a missing value 
+Nan - not a number: also used to represent missing value
+NA also can be used
+
+#creation of vector
+c() #Concatenation
+
+d<-c(0.5,0.6)
+class(d) #result as integers
+
+e<-c(TRUE,FALSE)
+class(e)
+
+f<-c(T,F)
+class(f) # result as logical
+
+#Characters write in quores ""
+g<-c("a","b","c")
+g
+class(g)
+h<-c("prasanna", "thillai","nagraj")
+class(h) # result as character
+
+j<-"push"
+k<-c(j,"nagraj")
+l<-c("j","nagraj")
+j
+k
+l
+m<-9:15
+class(m)
+
+h<-c(1+0i,2+4i)
+class(h) # result as complex
+
+functions:
+mean(m) #mean of given values
+sum(m)  #sum of given values
+length(m)  #number of variables present in a given set
