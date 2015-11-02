@@ -65,4 +65,59 @@ class(h) # result as complex
 functions:
 mean(m) #mean of given values
 sum(m)  #sum of given values
-length(m)  #number of variables present in a given set
+
+
+length(m) # number of elements in variable m
+
+02 Nov 2015
+
+Add below items to same git repository
+
+# mixing objects
+o <- c(1.7, "a")
+class(o)
+
+p <- c(TRUE, 2)
+class(p)
+
+q <- c("a", TRUE)
+class(q)
+
+# explicit coercion
+
+r <- 0:6
+r
+class(r)
+
+as.numeric(r)
+class(r)
+
+as.logical(r)
+as.character(r)
+as.complex(r)
+
+as.numeric(r)
+mena(r) # error - typo
+mean(r)
+sum(r)
+median(r)
+sqrt(r)
+
+mean(r, na.rm = TRUE)
+
+s <- c(1:6, NA, NA)
+s
+
+# simple R functions
+mean(s)
+mean(s, na.rm = T)
+median(1:4)
+
+# subset function
+s[1]
+s[2]
+s[5]
+
+t <- 18:25
+t[5]
+t[2:4]
